@@ -1,0 +1,18 @@
+
+[Unit]
+Description=AlgarETL instance for my Flask app
+After=network.target
+
+[Service]
+User=producao
+Group=producao
+[Service]
+Environment="ORACLE_HOME=/opt/oracle/instantclient_21_12"
+Environment="LD_LIBRARY_PATH=/opt/oracle/instantclient_21_12"
+Environment="PATH=/app_etl/:/usr/local/bin:/usr/bin:/bin"
+
+WorkingDirectory=/app_etl
+ExecStart=gunicorn --workers 3 --bind 127.0.0.1:8080 app:app
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,39 @@
+hugoa.AUX_QTD_MATERIAIS
+
+
+--2 - Prioridade 1 - Sequencia 2 - [GA.R.13 - GA.C.26 e 27]
+SELECT  /*+ PARALLEL(GM,4,4)*/
+        GM.TIP_ORD_SRV                    "Tipo OS"
+      , GM.DSC_GRP_MAT_BXA                "Descricao do Item"
+      , GM.STA_GRP_MAT_BXA                "Status Grupo"
+      , GM.DAT_CRI_GRP_MAT_BXA            "Data Criacao do Cadastro"
+      , UPPER(GM.NOM_USR_CRI_GRP_MAT_BXA) "Nome Usuario Criou Cadastro"      
+      
+      , GM.QTD_MAX_BXA                    "Ultimo - Qtde Max. Itens"
+      , GM.DAT_ATL_GRP_MAT_BXA            "Ultimo - Data Alteracao do Cadastro"
+      , UPPER(GM.NOM_USR_ATL_GRP_MAT_BXA) "Ultimo - Nome Usuario Alterou Cadstro"
+      
+      , X.QTD_MAX_BXA                     "Penultimo - Qtde Max. Itens"
+      , X.DAT_ATL_GRP_MAT_BXA             "Penultimo - Data Alteracao do Cadastro"
+      , UPPER(X.NOM_USR_ATL_GRP_MAT_BXA)  "Penultimo - Nome Usuario Alterou Cadstro"
+FROM  MARIALAR.D_GRUPO_MATERIAL GM
+LEFT JOIN ( SELECT /*+ PARALLEL(GM,4,4)*/
+                   GM.SRK_GRP_MAT, GM.DAT_INI_VIG_RGT, GM.DAT_FIM_VIG_RGT, GM.DAT_ATL_GRP_MAT_BXA
+                 , UPPER(GM.NOM_USR_ATL_GRP_MAT_BXA) NOM_USR_ATL_GRP_MAT_BXA, GM.QTD_MAX_BXA
+            FROM  MARIALAR.D_GRUPO_MATERIAL GM
+            WHERE 1=1
+            AND   GM.IDT_RGT_ATU = 0
+            AND   GM.NOM_SIS_ORI = 'ALGAR SOM'
+            --AND   GM.SRK_GRP_MAT IN (316)--, 288)
+          ) X ON (GM.SRK_GRP_MAT = X.SRK_GRP_MAT AND GM.DAT_INI_VIG_RGT = X.DAT_FIM_VIG_RGT)
+WHERE 1=1
+AND   GM.IDT_RGT_ATU = 1
+AND   GM.NOM_SIS_ORI = 'ALGAR SOM'
+AND   GM.DSC_GRP_MAT_BXA IS NOT NULL
+AND   GM.TIP_ORD_SRV IS NOT NULL
+--AND   GM.SRK_GRP_MAT IN (316)--, 288)
+GROUP BY GM.TIP_ORD_SRV, GM.DSC_GRP_MAT_BXA, GM.STA_GRP_MAT_BXA, GM.DAT_CRI_GRP_MAT_BXA
+      , UPPER(GM.NOM_USR_CRI_GRP_MAT_BXA), GM.QTD_MAX_BXA, GM.DAT_ATL_GRP_MAT_BXA, UPPER(GM.NOM_USR_ATL_GRP_MAT_BXA)
+      , X.QTD_MAX_BXA, X.DAT_ATL_GRP_MAT_BXA, UPPER(X.NOM_USR_ATL_GRP_MAT_BXA)
+ORDER BY GM.DSC_GRP_MAT_BXA, GM.TIP_ORD_SRV
+      

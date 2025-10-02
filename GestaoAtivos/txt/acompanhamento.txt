@@ -1,0 +1,193 @@
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+I.	P[4.1]  - Cod Risco [GA.R.04] - Cod Controle [GA.C.08]
+a.	4.1 - Realizar Solicitação de Materiais
+b.	GA.R.04 - Desvio de materiais por falta de conferência da separação, carregamento, transporte ou entrega
+c.	GA.C.08 - Aceite da carga (volume) pelo técnico no Algar SOM
+
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+II.	P[3.11] - Cod Risco [GA.R.04] - Cod Controle [GA.C.10]
+a.	3.11. Realizar Remessa de Materiais para Técnico (Próprio ou Terceiro)
+b.	GA.R.04 - Desvio de materiais por falta de conferência da separação, carregamento, transporte ou entrega
+c.	GA.C.10 - Monitoramento das entregas aos técnicos
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+III.	P[4.5]  - Cod Risco [GA.R.04] - Cod Controle [GA.C.57]
+a.	4.5. Devolução de Materiais para os CD´s
+b.	GA.R.04 - Desvio de materiais por falta de conferência da separação, carregamento, transporte ou entrega
+c.	GA.C.57 - Monitoramento do indicador "Devolução por Técnicos"
+ 
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+IV.	P[4.5]  - Cod Risco [GA.R.32] - Cod Controle [GA.C.57]
+a.	4.5. Devolução de Materiais para os CD´s
+b.	GA.R.32 - Falha no registro sistêmico do material recolhido por: (i) falta de lançamento no sistema; (ii) input errado das informações do material/bem recolhido (ex: nro do serial); (iii) erros nos sistemas que não concluem o registro sistêmico
+c.	GA.C.57 - Monitoramento do indicador "Devolução por Técnicos"
+
+
+----------------------------------------------------------------------------------------------------------------------------
+-- 80%
+----------------------------------------------------------------------------------------------------------------------------
+
+V.	P[4.1]  - Cod Risco [GA.R.01] - Cod Controle [GA.C.01]
+a.	4.1 - Realizar Solicitação de Materiais
+b.	GA.R.01 - Retirada de material do estoque superior as quantidades máximas definidas por item e técnico
+c.	GA.C.01 - Bloqueio de material superior ao kit máximo
+
+        -- PENDENCIAS:
+            TABELA D_GRUPO_MATERIAL precisa subir da owner da maria luzia para DW e atualizado no SNOWFLAKE
+            JUSTAR A QUERY em [hugoa.gar_risco where id = 1] para realizar o join por grupo_material + OS
+
+----------------------------------------------------------------------------------------------------------------------------
+-- 100%
+----------------------------------------------------------------------------------------------------------------------------
+
+VI.	P[4.1]  - Cod Risco [GA.R.01] - Cod Controle [GA.C.02]
+a.	4.1 - Realizar Solicitação de Materiais
+b.	GA.R.01 - Retirada de material do estoque superior as quantidades máximas definidas por item e técnico
+c.	GA.C.02 - Liberação de exceção para solicitação de quantidades superiores ao kit máximo
+
+        -- OBSERVACAO:
+            ADICIONADO JUNTO AO ITEM 5
+
+----------------------------------------------------------------------------------------------------------------------------
+-- 100%
+----------------------------------------------------------------------------------------------------------------------------
+
+VII.	P[4.1]  - Cod Risco [GA.R.01] - Cod Controle [GA.C.17]
+a.	4.1 - Realizar Solicitação de Materiais
+b.	GA.R.01 - Retirada de material do estoque superior as quantidades máximas definidas por item e técnico
+c.	GA.C.17 - Cadastro das quantidades do kit máximo
+
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+VIII.	P[4.2]  - Cod Risco [GA.R.01] - Cod Controle [GA.C.01]
+a.	4.2. Transferência de Materiais entre Técnicos
+b.	GA.R.01 - Retirada de material do estoque superior as quantidades máximas definidas por item e técnico
+c.	GA.C.01 - Bloqueio de material superior ao kit máximo
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+IX.	P[4.2]  - Cod Risco [GA.R.01] - Cod Controle [GA.C.37]
+a.	4.2. Transferência de Materiais entre Técnicos
+b.	GA.R.01 - Retirada de material do estoque superior as quantidades máximas definidas por item e técnico
+c.	GA.C.37 – Aprovação para transferência de material entre técnicos
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+X.	P[4.1]  - Cod Risco [GA.R.02] - Cod Controle [GA.C.04]
+a.	4.1 - Realizar Solicitação de Materiais
+b.	GA.R.02 - Retirada de material do estoque sem aprovação
+c.	GA.C.04 - Aprovação para retirada de material
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XI.	P[4.3]  - Cod Risco [GA.R.13] - Cod Controle [GA.C.26]
+a.	4.3. Aplicação de Ativos (Atendimento Cliente e Manutenção Planta)
+b.	GA.R.13 - Baixar equipamentos na OS acima do instalado no cliente ou do permitido por tipo de instalação
+c.	GA.C.26 - Bloqueio de baixas de equipamentos
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XII.	P[4.3]  - Cod Risco [GA.R.13] - Cod Controle [GA.C.27]
+a.	4.3. Aplicação de Ativos (Atendimento Cliente e Manutenção Planta)
+b.	GA.R.13 - Baixar equipamentos na OS acima do instalado no cliente ou do permitido por tipo de instalação
+c.	Cadastro das quantidades permitidas de baixa por equipamento
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XIII.	P[4.3]  - Cod Risco [GA.R.16] - Cod Controle [GA.C.38]
+a.	4.3. Aplicação de Ativos (Atendimento Cliente e Manutenção Planta)
+b.	GA.R.16 - Desequalização entre as bases do SAP e Algar SOM gerando diferenças nas informações de equipamentos implantados
+c.	GA.C.38 - Baixa automática de equipamentos instalados
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XIV.	P[4.4]  - Cod Risco [GA.R.32] - Cod Controle [GA.C.53]
+a.	4.4. Logística Reversa do Cliente
+b.	GA.R.32 - Falha no registro sistêmico do material recolhido por: (i) falta de lançamento no sistema; (ii) input errado das informações do material/bem recolhido (ex: nro do serial); (iii) erros nos sistemas que não concluem o registro sistêmico
+c.	GA.C.53 - Monitoramento de OS de recolha com erro no Algar SOM
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XV.	P[4.4]  - Cod Risco [GA.R.32] - Cod Controle [GA.C.56]
+a.	4.4. Logística Reversa do Cliente
+b.	GA.R.32 - Falha no registro sistêmico do material recolhido por: (i) falta de lançamento no sistema; (ii) input errado das informações do material/bem recolhido (ex: nro do serial); (iii) erros nos sistemas que não concluem o registro sistêmico
+c.	Monitoramento das novas instalações sem a recolha de equipamentos em OSs de manutenção/UPGRADE
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XVI.	P[4.4]  - Cod Risco [GA.R.34] - Cod Controle [GA.C.53]
+a.	4.4. Logística Reversa do Cliente
+b.	GA.R.34 - Recolha de material sem o devido registro sistêmico por erros no faturamento do retorno da mercadoria.
+c.	GA.C.53 - Monitoramento de OS de recolha com erro no Algar SOM
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XVII.	P[6.2]  - Cod Risco [GA.R.17] - Cod Controle [GA.C.34]
+a.	6.2. Aplicação de Ativos (Atendimento Planta Algar)
+b.	GA.R.17 - Implantação realizada em desacordo com o projeto
+c.	GA.C.34 - Apontamento dos materiais implantados por projeto
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XVIII.	P[4.6]  - Cod Risco [GA.R.40] - Cod Controle [GA.C.58]
+a.	4.6. Inventário Volante
+b.	GA.R.40 - Inventário físico de estoque não conciliado com a contabilidade
+c.	GA.C.58 - Realização de inventário volante
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XIX.	P[4.6]  - Cod Risco [GA.R.40] - Cod Controle [GA.C.59]
+a.	4.6. Inventário Volante
+b.	GA.R.40 - Inventário físico de estoque não conciliado com a contabilidade
+c.	GA.C.59 - Aceite dos ajustes no Algar SOM
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------
+
+XX.	P[4.6]  - Cod Risco [GA.R.40] - Cod Controle [GA.C.62]
+a.	4.6. Inventário Volante
+b.	GA.R.40 - Inventário físico de estoque não conciliado com a contabilidade
+c.	GA.C.62 - Monitoramento do indicador "Inventário Volante"
+
+----------------------------------------------------------------------------------------------------------------------------
+--
+----------------------------------------------------------------------------------------------------------------------------

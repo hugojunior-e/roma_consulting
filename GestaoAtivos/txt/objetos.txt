@@ -1,0 +1,52 @@
+create or replace TABLE DWDEV.HUGOA.GAR_RISCO 
+(
+	ID 				NUMBER,
+	NAME 			STRING,
+	TAG 			STRING,
+	IN_VARS 		STRING,
+	IN_QUERY 		STRING,
+	IN_QUERY_AFTER 	STRING,
+	STATUS 			NUMBER
+);
+
+
+create or replace TABLE DWDEV.HUGOA.GAR_RISCO_CONTROLE 
+(
+	ID 				NUMBER,
+	ID_GAR_RISCO 	NUMBER,
+	NAME 			string,
+	TAG 			string,
+	CODE 			string,
+	TABLE_OUT 		string,
+	TABLE_FIELDS 	string,
+	TABLE_DATA 		string,
+	STATUS 			NUMBER
+);
+
+
+create or replace TABLE DWDEV.HUGOA.GAR_API_01 
+(
+	ID                     NUMBER autoincrement start 1 increment 1 noorder,
+	TECNICO                string,
+	CPF_TECNICO            string,
+	NOME_EMPRESA_TECNICO   string,
+	SUPERVISOR_TECNICO     string,
+	CORDENADOR_TECNICO     string,
+	GRUPO_MATERIAL         string,
+	QTD_MAX_BXA            NUMBER,
+	QUANTIDADE             NUMBER,
+    dt_max_autorizacao     string,
+	ID_GAR_RISCO_CONTROLE  NUMBER,
+	CREATED_AT             TIMESTAMP_NTZ(9) DEFAULT CURRENT_TIMESTAMP()
+)
+
+
+
+
+create or replace TABLE DWDEV.HUGOA.GAR_API_02 
+(
+	ID 						NUMBER autoincrement start 1 increment 1 noorder,
+	GRUPO_MATERIAL 			STRING,
+	ID_GAR_RISCO_CONTROLE 	NUMBER,
+	CREATED_AT 				TIMESTAMP_NTZ(9) DEFAULT CURRENT_TIMESTAMP()
+);
