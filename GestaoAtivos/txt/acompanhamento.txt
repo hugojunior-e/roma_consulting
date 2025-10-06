@@ -27,7 +27,7 @@ b.	GA.R.04 - Desvio de materiais por falta de conferência da separação, carre
 c.	GA.C.57 - Monitoramento do indicador "Devolução por Técnicos"
  
 ----------------------------------------------------------------------------------------------------------------------------
--- 100% - EXCLUIDO / DUPLICADO
+-- 100% - EXCLUIDO / DUPLICADO - Controle de risco igual ao III
 ----------------------------------------------------------------------------------------------------------------------------
 
 IV.	P[4.5]  - Cod Risco [GA.R.32] - Cod Controle [GA.C.57]
