@@ -99,7 +99,7 @@ b.	GA.R.02 - Retirada de material do estoque sem aprovação
 c.	GA.C.04 - Aprovação para retirada de material
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- EM CURSO / CONFERINDO DUPLICIDADE
 ----------------------------------------------------------------------------------------------------------------------------
 
 XI.	P[4.3]  - Cod Risco [GA.R.13] - Cod Controle [GA.C.26]
@@ -108,7 +108,7 @@ b.	GA.R.13 - Baixar equipamentos na OS acima do instalado no cliente ou do permi
 c.	GA.C.26 - Bloqueio de baixas de equipamentos
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- EM CURSO / CONFERINDO DUPLICIDADE
 ----------------------------------------------------------------------------------------------------------------------------
 
 XII.	P[4.3]  - Cod Risco [GA.R.13] - Cod Controle [GA.C.27]
