@@ -117,7 +117,7 @@ b.	GA.R.13 - Baixar equipamentos na OS acima do instalado no cliente ou do permi
 c.	Cadastro das quantidades permitidas de baixa por equipamento
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- 100%
 ----------------------------------------------------------------------------------------------------------------------------
 
 XIII.	P[4.3]  - Cod Risco [GA.R.16] - Cod Controle [GA.C.38]
