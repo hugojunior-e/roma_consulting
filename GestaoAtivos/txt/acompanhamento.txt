@@ -37,7 +37,7 @@ c.	GA.C.57 - Monitoramento do indicador "Devolução por Técnicos"
 
 
 ----------------------------------------------------------------------------------------------------------------------------
--- 100%
+-- 100% - ok
 ----------------------------------------------------------------------------------------------------------------------------
 
 V.	P[4.1]  - Cod Risco [GA.R.01] - Cod Controle [GA.C.01]
@@ -131,7 +131,7 @@ b.	GA.R.32 - Falha no registro sistêmico do material recolhido por: (i) falta d
 c.	GA.C.53 - Monitoramento de OS de recolha com erro no Algar SOM
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- PENDENTE
 ----------------------------------------------------------------------------------------------------------------------------
 
 XV.	P[4.4]  - Cod Risco [GA.R.32] - Cod Controle [GA.C.56]
@@ -140,7 +140,7 @@ b.	GA.R.32 - Falha no registro sistêmico do material recolhido por: (i) falta d
 c.	Monitoramento das novas instalações sem a recolha de equipamentos em OSs de manutenção/UPGRADE
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- PENDENTE
 ----------------------------------------------------------------------------------------------------------------------------
 
 XVI.	P[4.4]  - Cod Risco [GA.R.34] - Cod Controle [GA.C.53]
@@ -149,7 +149,7 @@ b.	GA.R.34 - Recolha de material sem o devido registro sistêmico por erros no f
 c.	GA.C.53 - Monitoramento de OS de recolha com erro no Algar SOM
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- PENDENTE / IN WAIT
 ----------------------------------------------------------------------------------------------------------------------------
 
 XVII.	P[6.2]  - Cod Risco [GA.R.17] - Cod Controle [GA.C.34]
@@ -158,7 +158,7 @@ b.	GA.R.17 - Implantação realizada em desacordo com o projeto
 c.	GA.C.34 - Apontamento dos materiais implantados por projeto
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- PENDENTE / IN WAIT - a pedido luiz
 ----------------------------------------------------------------------------------------------------------------------------
 
 XVIII.	P[4.6]  - Cod Risco [GA.R.40] - Cod Controle [GA.C.58]
