@@ -90,7 +90,7 @@ b.	GA.R.01 - Retirada de material do estoque superior as quantidades máximas de
 c.	GA.C.37 – Aprovação para transferência de material entre técnicos
 
 ----------------------------------------------------------------------------------------------------------------------------
---
+-- 100%
 ----------------------------------------------------------------------------------------------------------------------------
 
 X.	P[4.1]  - Cod Risco [GA.R.02] - Cod Controle [GA.C.04]
